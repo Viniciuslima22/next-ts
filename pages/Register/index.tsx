@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './styles.module.css' 
+import styles from '../styles.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Login(){
+export default function Register(){
   return (
     <>
         <Head>
-            <title>Tela de Login</title>
+            <title>Tela de Registro</title>
         </Head>
 
     <div className={styles.container}>
@@ -20,7 +20,7 @@ export default function Login(){
 
             </aside>
             <main className={styles.forms}>
-          <h1>Controle seus gastos</h1>
+          <h1>Crie uma conta</h1>
           <form>  
                
                 <input type="email" placeholder='E-mail' className={styles.input}/> <br />
@@ -31,7 +31,7 @@ export default function Login(){
 
                <button className={styles.button}>Entrar</button> <br />
 
-               <Link href="/Register" className={styles.Link}>Criar conta</Link> <br />
+               <Link href="/" className={styles.Link}>Já possuir uma conta ?</Link> <br />
 
           </form>
 
